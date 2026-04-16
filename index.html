@@ -356,7 +356,7 @@
     }
 
     // QR Code
-    const pageUrl=window.location.href!=='about:blank'?window.location.href:'https://minesh.fuziongroup.ca';
+    const pageUrl='https://bit.ly/mineshdattani';
     new QRCode(document.getElementById('qrcode'),{text:pageUrl,width:200,height:200,colorDark:'#0A0A0A',colorLight:'#FFFFFF',correctLevel:QRCode.CorrectLevel.H});
 
     function downloadQR(){const c=document.querySelector('#qrcode canvas');if(c){const a=document.createElement('a');a.download='Minesh_Dattani_QR.png';a.href=c.toDataURL('image/png');a.click();}}
